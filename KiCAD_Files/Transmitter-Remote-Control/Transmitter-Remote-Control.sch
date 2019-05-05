@@ -375,7 +375,7 @@ MISO
 Text GLabel 1700 2200 3    50   Input ~ 0
 MOSI
 Text GLabel 1800 2200 3    50   Input ~ 0
-SCK
+SCKn
 Text GLabel 1900 2200 3    50   Input ~ 0
 ~CSN
 Text GLabel 2100 2200 3    50   Input ~ 0
@@ -684,7 +684,7 @@ MISO
 Text GLabel 3800 4500 0    50   Input ~ 0
 MOSI
 Text GLabel 3800 4100 0    50   Input ~ 0
-SCK
+SCKn
 Text GLabel 4200 4700 0    50   Input ~ 0
 ~CSN
 Text GLabel 4200 4800 0    50   Input ~ 0
@@ -2267,4 +2267,70 @@ Wire Wire Line
 	7000 5100 7100 5100
 Wire Wire Line
 	7100 5000 7000 5000
+$Comp
+L Device:C_Small C7
+U 1 1 5CCF57F5
+P 3950 7050
+F 0 "C7" H 4042 7096 50  0000 L CNN
+F 1 "100nF" H 4042 7005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D9.0mm_W5.0mm_P5.00mm" H 3950 7050 50  0001 C CNN
+F 3 "~" H 3950 7050 50  0001 C CNN
+	1    3950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5CCF5D10
+P 4350 7050
+F 0 "C8" H 4442 7096 50  0000 L CNN
+F 1 "100nF" H 4442 7005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4350 7050 50  0001 C CNN
+F 3 "~" H 4350 7050 50  0001 C CNN
+	1    4350 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6950 3950 6850
+Wire Wire Line
+	3950 6850 4150 6850
+Wire Wire Line
+	4350 6850 4350 6950
+Wire Wire Line
+	4350 7150 4350 7250
+Wire Wire Line
+	4350 7250 4150 7250
+Wire Wire Line
+	3950 7250 3950 7150
+$Comp
+L power:GND #PWR024
+U 1 1 5CCFEDE3
+P 4150 7300
+F 0 "#PWR024" H 4150 7050 50  0001 C CNN
+F 1 "GND" H 4155 7127 50  0000 C CNN
+F 2 "" H 4150 7300 50  0001 C CNN
+F 3 "" H 4150 7300 50  0001 C CNN
+	1    4150 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 7300 4150 7250
+Connection ~ 4150 7250
+Wire Wire Line
+	4150 7250 3950 7250
+$Comp
+L power:+5V #PWR023
+U 1 1 5CD03B8F
+P 4150 6800
+F 0 "#PWR023" H 4150 6650 50  0001 C CNN
+F 1 "+5V" V 4165 6928 50  0000 L CNN
+F 2 "" H 4150 6800 50  0001 C CNN
+F 3 "" H 4150 6800 50  0001 C CNN
+	1    4150 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6800 4150 6850
+Connection ~ 4150 6850
+Wire Wire Line
+	4150 6850 4350 6850
 $EndSCHEMATC
