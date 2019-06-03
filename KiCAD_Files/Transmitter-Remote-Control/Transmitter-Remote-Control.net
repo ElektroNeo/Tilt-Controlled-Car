@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Documents\Electronics\Tilt-Controlled-Car\Tilt-Controlled-Car\KiCAD_Files\Transmitter-Remote-Control\Transmitter-Remote-Control.sch)
-    (date "5.05.2019 11:19:01")
+    (date "10.05.2019 23:20:11")
     (tool "Eeschema (5.1.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -155,7 +155,7 @@
       (tstamp 5CA415AE))
     (comp (ref U4)
       (value PIC18F45K22-IP)
-      (footprint Package_DIP:DIP-42_W15.24mm_LongPads)
+      (footprint Package_DIP:DIP-40_W15.24mm_LongPads)
       (libsource (lib Symols) (part PIC18F45K22-IP) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5CB325DA))
